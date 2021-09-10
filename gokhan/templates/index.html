@@ -12,7 +12,7 @@
   <meta name="keywords" content="özel ders, gökhan hoca, gökhan hoca matematik " />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <!-- <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
 
   <title>GÖKHAN HOCA</title>
 
@@ -65,6 +65,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'about' %}"> HAKKIMIZDA </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'tests' %}"> Tüm Testler </a>
               </li>
               {% for category in categories %}
               <li class="nav-item">
@@ -186,11 +189,10 @@
           </div>
           <div class="detail-box">
             <h4>
-              BEST <br />
-              INDUSTRY LEADERS
+              Matematikte <br />
+              Başarıya Giden Yol
             </h4>
             <a href="">
-              Read More
             </a>
           </div>
         </div>
@@ -200,11 +202,10 @@
           </div>
           <div class="detail-box">
             <h4>
-              LEARN <br />
-              COURSES ONLINE
+              Eksiklerinizi <br />
+              Birlikte Tamamlayalım.
             </h4>
             <a href="">
-              Read More
             </a>
           </div>
         </div>
@@ -214,11 +215,11 @@
           </div>
           <div class="detail-box">
             <h4>
-              BEST <br />
-              LIBRARY & STORE
+              Sizin İçin Seçtiğim <br />
+              Testler
             </h4>
-            <a href="">
-              Read More
+            <a href="{% url 'tests' %}">
+              Tüm Testler 
             </a>
           </div>
         </div>
@@ -249,15 +250,13 @@
           <div class="detail-box">
             <div class="heading_container">
               <h3>
-                About Our College
+               Hakkımızda
               </h3>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more it
+                Kısaca Gökhan Hoca
               </p>
-              <a href="">
-                Read More
+              <a href="{% url 'about' %}">
+                Devamı
               </a>
             </div>
           </div>
@@ -277,11 +276,10 @@
     <div class="container">
       <div class="heading_container">
         <h3>
-          POPULAR COURSES
+          İHTİYAÇLARINIZA GÖRE ÇÖZÜMLER
         </h3>
         <p>
-          It is a long established fact that a reader will be distracted
-        </p>
+                  </p>
       </div>
       <div class="course_container">
         <div class="course_content">
@@ -291,40 +289,8 @@
               <img src="{% static 'images/link.png' %}" alt="" />
             </a>
             <h5>
-              LMS <br />
-              Content
-            </h5>
-          </div>
-          <div class="box">
-            <img src="{% static 'images/c-2.jpg' %}" alt="" />
-            <a href="" class="">
-              <img src="{% static 'images/link.png' %}" alt="" />
-            </a>
-            <h5>
-              From <br />
-              Zero to Hero
-            </h5>
-          </div>
-        </div>
-        <div class="course_content">
-          <div class="box">
-            <img src="{% static 'images/c-3.jpg' %}" alt="" />
-            <a href="" class="">
-              <img src="{% static 'images/link.png' %}" alt="" />
-            </a>
-            <h5>
-              Learn <br />
-              Python – Interactive
-            </h5>
-          </div>
-          <div class="box">
-            <img src="{% static 'images/c-4.jpg' %}" alt="" />
-            <a href="" class="">
-              <img src="{% static 'images/link.png' %}" alt="" />
-            </a>
-            <h5>
-              Your <br />
-              Complete Guide
+              İSTER <br />
+              YÜZYÜZE
             </h5>
           </div>
           <div class="box">
@@ -333,15 +299,10 @@
               <img src="{% static 'images/link.png' %}" alt="" />
             </a>
             <h5>
-              Photography
+              İSTER <br>
+              ONLİNE
             </h5>
-          </div>
         </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          Read More
-        </a>
       </div>
     </div>
   </section>
@@ -389,8 +350,8 @@
         {% endfor %}
       </div>
       <div class="btn-box">
-        <a href="">
-          Read More
+        <a href="{% url 'tests' %}">
+          Tüm Testler
         </a>
       </div>
     </div>
@@ -404,10 +365,10 @@
     <div class="container">
       <div class="heading_container">
         <h3>
-          What People Say
+          Veli Yorumları
         </h3>
         <p>
-          It is a long established fact that a reader will be distracted
+          
         </p>
       </div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -419,13 +380,11 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Distracted by
+                  Oğuz Aydın
                 </h5>
                 <p>
-                  It is a long established fact that a reader will be
-                  distracted by the readable content of a page when looking at
-                  its layout. The point of using Lorem Ipsum is that it has a
-                  more-or-less normal distribution of letters
+                  Gökhan hocamız çok kaliteli ve 
+                  eğlenceli bir şekilde derslerini işlemekte.
                 </p>
               </div>
             </div>
@@ -527,7 +486,7 @@
                 gokhanhoca@gmail.com
               </a>
               <a href="">
-                İLETİŞİM : +905444030453
+                İLETİŞİM : <a href="tel:+905444030453">05444030453</a>
               </a>
             </div>
           </div>
